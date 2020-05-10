@@ -217,10 +217,12 @@ body {
   height: 1054px;
   width: 100%;
   background: no-repeat top/cover url("../source/footer.jpg"); }
+  @media (max-width: 661px) {
+    .footer {
+      height: auto; } }
   .footer .container {
     width: 65%;
-    margin: 0 auto;
-    height: 100%; }
+    margin: 0 auto; }
     @media (max-width: 800px) {
       .footer .container {
         width: 75%; } }
@@ -264,6 +266,7 @@ body {
       font-size: 23px;
       color: rgba(255, 255, 255, 0.8);
       text-align: center;
-      padding-top: 100px; }
+      padding: 100px 0;
+      margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */
