@@ -225,16 +225,17 @@ body {
       font-weight: 300;
       text-align: center;
       padding: 70px 0;
+
     }
 
     .text {
       line-height: 1.8;
       font-size: 14px;
+      margin: 0;
 
       &-title {
         font-size: 30px;
         display: block;
-        height: min-content;
       }
     }
 
@@ -245,19 +246,26 @@ body {
       background-color: #f5f5f5;
       padding: 13px 55px;
       border-radius: 5px;
-      width: 100%;
       box-sizing: border-box;
       flex-wrap: wrap;
-      //height: 70px;
       align-items: center;
+      margin-bottom: 50px;
+      @media (max-width: 366px) {
+        display: block;
+      }
 
       .val {
         display: flex;
         flex-direction: column;
         text-align: center;
-        //padding: 14px 0;
         box-sizing: border-box;
         align-items: center;
+        @media (max-width: 770px) {
+          margin: 5px 5px;
+          @media (max-width: 370px) {
+            margin: 15px 5px;
+          }
+        }
 
         &-num {
           font-size: 23px;
@@ -279,6 +287,7 @@ body {
   @media (max-width: 661px) {
     height: auto;
   }
+
   .container {
     @include container;
 
