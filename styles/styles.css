@@ -200,7 +200,7 @@ body {
       box-sizing: border-box;
       flex-wrap: wrap;
       align-items: center;
-      margin-bottom: 50px; }
+      margin-bottom: 40px; }
       @media (max-width: 366px) {
         .statistic .container .values {
           display: block; } }
