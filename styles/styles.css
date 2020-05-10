@@ -147,7 +147,7 @@ body {
 .text-wrapper {
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 100px; }
+  padding: 100px 10px 0; }
   .text-wrapper .btn {
     font-size: 23px;
     padding: 7px 15px;
