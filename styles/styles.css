@@ -10,6 +10,13 @@ body {
   .header .container {
     width: 65%;
     margin: 0 auto; }
+    @media (max-width: 800px) {
+      .header .container {
+        width: 75%; } }
+  @media (max-width: 800px) and (max-width: 500px) {
+    .header .container {
+      width: 85%; } }
+
   .header-small-title {
     text-align: center;
     margin: 0;
@@ -32,20 +39,34 @@ body {
 .gallery {
   background-color: #fff;
   height: 737px; }
+  @media (max-width: 710px) {
+    .gallery {
+      height: auto;
+      padding-bottom: 50px; } }
   .gallery .container {
     width: 65%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 800px) {
+      .gallery .container {
+        width: 75%; } }
+  @media (max-width: 800px) and (max-width: 500px) {
+    .gallery .container {
+      width: 85%; } }
+
   .gallery .left-col {
     display: flex;
     flex-direction: column;
     width: 75%; }
     .gallery .left-col .text-wrapper {
-      padding: 55px 5px;
+      padding: 3.5vw 5px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
+      @media (max-width: 890px) {
+        .gallery .left-col .text-wrapper {
+          flex-direction: column; } }
       .gallery .left-col .text-wrapper .section-title {
         font-size: 30px;
         font-weight: 300;
@@ -55,6 +76,11 @@ body {
         font-size: 13px;
         color: rgba(0, 0, 0, 0.7);
         line-height: 2; }
+        @media (max-width: 1294px) {
+          .gallery .left-col .text-wrapper .section-about {
+            padding-left: 5px; }
+            .gallery .left-col .text-wrapper .section-about br {
+              display: none; } }
     .gallery .left-col .images {
       height: 500px;
       background-color: darkorange;
@@ -107,7 +133,7 @@ body {
             .gallery .left-col .images .right-col .img-box .right-col .img {
               background: no-repeat center/cover url("../source/img-6.jpg"); }
   .gallery .img-box {
-    width: 230px;
+    width: 23%;
     height: 738px;
     background: no-repeat center/cover url("../source/col-2.jpg");
     position: relative;
@@ -117,25 +143,41 @@ body {
   max-height: 326px;
   height: 326px;
   background: no-repeat center/cover url("../source/banner.jpg"); }
-  .banner .text-wrapper {
+
+.text-wrapper {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 100px; }
+  .text-wrapper .btn {
+    font-size: 23px;
+    padding: 7px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-sizing: border-box; }
+  .text-wrapper .text {
+    font-size: 13px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    padding-top: 100px; }
-    .banner .text-wrapper .btn {
-      font-size: 23px;
-      padding: 7px 15px;
-      border: 1px solid rgba(255, 255, 255, 0.8); }
-    .banner .text-wrapper .text {
-      font-size: 13px;
-      text-align: center;
-      padding-top: 25px;
-      line-height: 2; }
+    padding-top: 25px;
+    line-height: 2; }
 
 .statistic {
-  height: 504px; }
+  height: 504px;
+  padding-bottom: 50px; }
+  .statistic h2 {
+    margin: 0; }
+  @media (max-width: 925px) {
+    .statistic {
+      height: auto; } }
   .statistic .container {
     width: 65%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    flex-wrap: wrap; }
+    @media (max-width: 800px) {
+      .statistic .container {
+        width: 75%; } }
+  @media (max-width: 800px) and (max-width: 500px) {
+    .statistic .container {
+      width: 85%; } }
+
     .statistic .container .statistic-title {
       font-size: 30px;
       font-weight: 300;
@@ -146,28 +188,82 @@ body {
       font-size: 14px; }
       .statistic .container .text-title {
         font-size: 30px;
-        display: block; }
+        display: block;
+        height: min-content; }
     .statistic .container .values {
       display: flex;
       justify-content: space-between;
       margin-top: 35px;
       background-color: #f5f5f5;
-      padding: 0 55px;
+      padding: 13px 55px;
       border-radius: 5px;
-      width: 940px;
+      width: 100%;
       box-sizing: border-box;
-      margin-bottom: 127px;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      align-items: center; }
       .statistic .container .values .val {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 14px 0;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        align-items: center; }
         .statistic .container .values .val-num {
-          font-size: 28px;
+          font-size: 23px;
           font-weight: 500; }
         .statistic .container .values .val-title {
           font-size: 17px; }
+
+.footer {
+  height: 1054px;
+  width: 100%;
+  background: no-repeat top/cover url("../source/footer.jpg"); }
+  .footer .container {
+    width: 65%;
+    margin: 0 auto;
+    height: 100%; }
+    @media (max-width: 800px) {
+      .footer .container {
+        width: 75%; } }
+  @media (max-width: 800px) and (max-width: 500px) {
+    .footer .container {
+      width: 85%; } }
+
+    .footer .container .btn {
+      font-size: 23px;
+      padding: 7px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-sizing: border-box;
+      width: 175px;
+      margin: 0 auto; }
+    .footer .container .text-wrapper {
+      padding-top: 118px;
+      margin-bottom: 90px; }
+    .footer .container .player {
+      height: 440px;
+      width: 77.8%;
+      display: flex;
+      background-color: #2c2c2c;
+      margin: 0 auto;
+      -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.42);
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.42); }
+      @media (max-width: 920px) {
+        .footer .container .player {
+          height: 380px; } }
+  @media (max-width: 920px) and (max-width: 660px) {
+    .footer .container .player {
+      height: 280px; } }
+
+  @media (max-width: 920px) and (max-width: 660px) and (max-width: 480px) {
+    .footer .container .player {
+      height: 200px; } }
+
+      .footer .container .player svg {
+        margin: auto; }
+    .footer .container .footer-text {
+      font-size: 23px;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding-top: 100px; }
 
 /*# sourceMappingURL=styles.css.map */

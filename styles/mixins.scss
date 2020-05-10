@@ -1,4 +1,17 @@
 @mixin container {
   width: 65%;
   margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 75%;
+    @media (max-width: 500px) {
+      width: 85%;
+    }
+  }
+}
+
+@mixin btn {
+  font-size: 23px;
+  padding: 7px 15px;
+  border: 1px solid rgba(255, 255, 255, .8);
+  box-sizing: border-box;
 }
