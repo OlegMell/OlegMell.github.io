@@ -14,4 +14,9 @@
   padding: 7px 15px;
   border: 1px solid rgba(255, 255, 255, .8);
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  &:hover {
+    box-shadow: 0 9px 16px -5px rgba(255, 255, 255, .3);
+  }
 }
